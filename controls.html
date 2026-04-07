@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles.css">
     
     <style>
-        /* Clean Center Fade-in (no upward movement) */
+     
         body {
             opacity: 0;
             transition: opacity 0.9s ease-in-out;
@@ -17,12 +17,12 @@
             opacity: 1;
         }
 
-        /* Your existing styles can go here if needed */
+   
     </style>
 </head>
 <body>
 
-    <!-- Navbar -->
+
     <header class="navbar" id="navbar">
         <div class="logo-area">
             <img src="assets/crashbuster-logo.png" alt="CrashBuster Logo">
@@ -37,7 +37,7 @@
         </nav>
     </header>
 
-    <!-- Retro Background Wrapper -->
+  
     <div class="retro-bg">
         <div class="page">
             <div class="card">
@@ -47,7 +47,7 @@
                     Keyboard & Mouse Guide
                 </p>
                 
-                <!-- Keyboard Guide Image -->
+              
                 <div style="text-align:center; margin-bottom:50px;">
                     <img src="assets/KeyboardandMouse.png" 
                          alt="Keyboard and Mouse Guide" 
@@ -66,18 +66,18 @@
             </div>
         </div>
 
-        <!-- Extra laser layer -->
+       
         <div class="extra-laser"></div>
     </div>
 
-    <!-- Fade-in Script + Navbar Scroll -->
+  
     <script>
-        // Center Fade-in
+       
         window.addEventListener('load', () => {
             document.body.classList.add('visible');
         });
 
-        // Navbar scroll animation
+  
         let lastScrollTop = 0;
         const navbar = document.getElementById('navbar');
 
