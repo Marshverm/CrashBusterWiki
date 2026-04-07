@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CrashBuster Controls</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <style>
+        /* Clean Center Fade-in (no upward movement) */
+        body {
+            opacity: 0;
+            transition: opacity 0.9s ease-in-out;
+        }
+
+        body.visible {
+            opacity: 1;
+        }
+
+        /* Your existing styles can go here if needed */
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar" id="navbar">
+        <div class="logo-area">
+            <img src="assets/crashbuster-logo.png" alt="CrashBuster Logo">
+            <h1>CrashBuster</h1>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="info.html">Story</a>
+            <a href="achievements.html">Achievements</a>
+            <a href="units.html">Units</a>
+            <a href="controls.html">Controls</a>
+        </nav>
+    </header>
+
+    <!-- Retro Background Wrapper -->
+    <div class="retro-bg">
+        <div class="page">
+            <div class="card">
+                <h2>Controls</h2>
+                
+                <p style="text-align:center; margin-bottom:40px;">
+                    Keyboard & Mouse Guide
+                </p>
+                
+                <!-- Keyboard Guide Image -->
+                <div style="text-align:center; margin-bottom:50px;">
+                    <img src="assets/KeyboardandMouse.png" 
+                         alt="Keyboard and Mouse Guide" 
+                         style="max-width:100%; border:2px solid #bb86fc; border-radius:12px; box-shadow:0 0 20px #bb86fc;">
+                </div>
+
+                <h3 style="text-align:center; margin:30px 0 15px;">Basic Controls</h3>
+                <ul>
+                    <li>W / A / S / D – Move</li>
+                    <li>Mouse – Aim</li>
+                    <li>Left Click – Shoot / Attack</li>
+                    <li>Right Click – Special Ability</li>
+                    <li>Shift – Dash</li>
+                    <li>ESC – Pause Menu</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Extra laser layer -->
+        <div class="extra-laser"></div>
+    </div>
+
+    <!-- Fade-in Script + Navbar Scroll -->
+    <script>
+        // Center Fade-in
+        window.addEventListener('load', () => {
+            document.body.classList.add('visible');
+        });
+
+        // Navbar scroll animation
+        let lastScrollTop = 0;
+        const navbar = document.getElementById('navbar');
+
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (currentScroll > lastScrollTop && currentScroll > 120) {
+                navbar.classList.add('hidden');
+            } else {
+                navbar.classList.remove('hidden');
+            }
+            lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+        });
+    </script>
+
+</body>
+</html>
