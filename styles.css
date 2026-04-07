@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-/* ====================== FONTS ====================== */
 @font-face {
     font-family: 'The Imposter';
     src: url('The Impostor.ttf') format('truetype');
@@ -40,12 +39,12 @@ h1, h2, h3, .section-title, .navbar h1, .game-title, .main-title, th {
     font-weight: normal;
 }
 
-/* TEXT GLOW */
+
 h1, h2, h3, p, li, td, th {
     text-shadow: 0 0 6px #bb86fc;
 }
 
-/* NAVBAR */
+
 .navbar {
     position: fixed;
     top: 0;
@@ -75,7 +74,7 @@ h1, h2, h3, p, li, td, th {
     margin-left: 25px;
 }
 
-/* HERO - Improved spacing */
+
 .hero {
     height: 100vh;
     display: flex;
@@ -83,11 +82,11 @@ h1, h2, h3, p, li, td, th {
     justify-content: center;
     align-items: center;
     text-align: center;
-    gap: 20px;                    /* Added spacing between elements */
+    gap: 20px;                    
 }
 
 .hero-logo {
-    width: 160px;                 /* Slightly bigger logo */
+    width: 160px;                 
     margin-bottom: 10px;
 }
 
@@ -122,7 +121,7 @@ h1, h2, h3, p, li, td, th {
     box-shadow: 0 0 30px #bb86fc;
 }
 
-/* Rest of your styles (card, table, etc.) */
+
 .page {
     padding-top: 130px;
     display: flex;
@@ -171,7 +170,7 @@ video {
     box-shadow: 0 0 25px #bb86fc;
 }
 
-/* ==================== NAVBAR IMPROVEMENTS ==================== */
+
 .navbar {
     position: fixed;
     top: 0;
@@ -191,7 +190,7 @@ video {
     transform: translateY(-100%);
 }
 
-/* Logo */
+
 .logo-area {
     display: flex;
     align-items: center;
@@ -211,7 +210,7 @@ video {
     color: #bb86fc;
 }
 
-/* Navigation Links */
+
 .navbar nav {
     display: flex;
     gap: 40px;
@@ -227,7 +226,7 @@ video {
     transition: all 0.3s ease;
 }
 
-/* Hover Animation */
+
 .navbar nav a::after {
     content: '';
     position: absolute;
@@ -251,12 +250,12 @@ video {
     width: 100%;
 }
 
-/* Hide "Story" button ONLY on the landing page */
+
 body.index-page .navbar nav a[href="info.html"] {
     display: none;
 }
 
-/* Retro Laser + Neon Grid Background - Reusable Class */
+
 .retro-bg {
     position: relative;
     overflow: hidden;
@@ -299,7 +298,7 @@ body.index-page .navbar nav a[href="info.html"] {
     z-index: 2;
 }
 
-/* Extra fast laser for more dynamic feel */
+
 .retro-bg .extra-laser {
     position: absolute;
     top: 0;
@@ -332,7 +331,7 @@ body.index-page .navbar nav a[href="info.html"] {
     100% { transform: translateX(300%); opacity: 0; }
 }
 
-/* Retro Laser + Neon Grid Background - Reusable Class */
+
 .retro-bg {
     position: relative;
     overflow: hidden;
@@ -375,7 +374,7 @@ body.index-page .navbar nav a[href="info.html"] {
     z-index: 2;
 }
 
-/* Extra fast laser for more dynamic feel */
+
 .retro-bg .extra-laser {
     position: absolute;
     top: 0;
