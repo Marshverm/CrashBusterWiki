@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CrashBuster Units</title>
+    <link rel="stylesheet" href="styles.css">
+   
+    <style>
+        /* Clean Center Fade-in (no upward movement) */
+        body {
+            opacity: 0;
+            transition: opacity 0.9s ease-in-out;
+        }
+
+        body.visible {
+            opacity: 1;
+        }
+
+        .units-page {
+            max-width: 1100px;
+            margin: auto;
+            padding: 100px 20px 80px;
+            position: relative;
+            z-index: 3;
+        }
+        
+        .card {
+            background: rgba(26, 26, 26, 0.85);
+            border-radius: 20px;
+            padding: 50px 60px;
+            border: 3px solid #bb86fc;
+            box-shadow: 0 0 30px #bb86fc;
+            position: relative;
+            z-index: 4;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 38px;
+            color: #d7aaff;
+            text-shadow: 0 0 12px #bb86fc;
+            margin: 60px 0 40px;
+        }
+        
+        .unit-header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 25px;
+            margin-bottom: 22px;
+        }
+        
+        .unit-name {
+            font-size: 32px;
+            color: #bb86fc;
+            text-shadow: 0 0 10px #bb86fc;
+            margin: 0;
+        }
+        
+        .unit-icon {
+            width: 100px;
+            height: auto;
+            object-fit: contain;
+            filter: drop-shadow(0 0 18px #bb86fc)
+                    drop-shadow(0 0 32px rgba(187, 134, 252, 0.7));
+        }
+        
+        .unit-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 70px;
+        }
+        
+        .unit-table th, .unit-table td {
+            padding: 15px 22px;
+            border: 1px solid #444;
+            text-align: left;
+            vertical-align: middle;
+        }
+        
+        .unit-table th {
+            background: rgba(42, 42, 42, 0.9);
+            color: #bb86fc;
+            font-size: 18px;
+            text-transform: uppercase;
+            width: 50%;
+        }
+        
+        .unit-table td {
+            color: #e0e0e0;
+            font-size: 16px;
+            background: rgba(26, 26, 26, 0.6);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar" id="navbar">
+        <div class="logo-area">
+            <img src="assets/crashbuster-logo.png" alt="CrashBuster Logo">
+            <h1>CrashBuster</h1>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="info.html">Story</a>
+            <a href="achievements.html">Achievements</a>
+            <a href="units.html">Units</a>
+            <a href="controls.html">Controls</a>
+        </nav>
+    </header>
+
+    <!-- Retro Background Wrapper -->
+    <div class="retro-bg">
+        <div class="units-page">
+            <div class="card">
+                <h2 class="section-title">ALLIES</h2>
+                
+                <!-- The Player -->
+                <div class="unit-header">
+                    <img src="assets/ThePlayer.png" alt="The Player" class="unit-icon">
+                    <h3 class="unit-name">THE PLAYER</h3>
+                </div>
+                <table class="unit-table">
+                    <tr><th>STAT</th><th>VALUE</th></tr>
+                    <tr><td>HEALTH</td><td>100</td></tr>
+                    <tr><td>REGEN</td><td>35</td></tr>
+                    <tr><td>FIRE RATE</td><td>0.2</td></tr>
+                    <tr><td>FIRE COUNT</td><td>1</td></tr>
+                    <tr><td>MOVE SPEED</td><td>40</td></tr>
+                    <tr><td>ROTATION SPEED</td><td>360</td></tr>
+                    <tr><td>BODY DAMAGE</td><td>30</td></tr>
+                    <tr><td>BODY KNOCKBACK</td><td>10</td></tr>
+                </table>
+
+                <!-- Troubleshoot -->
+                <div class="unit-header">
+                    <img src="assets/TroubleShoot.png" alt="Troubleshoot" class="unit-icon">
+                    <h3 class="unit-name">TROUBLESHOOT</h3>
+                </div>
+                <table class="unit-table">
+                    <tr><th>STAT</th><th>VALUE</th></tr>
+                    <tr><td>HEALTH</td><td>125</td></tr>
+                    <tr><td>REGEN</td><td>30</td></tr>
+                    <tr><td>FIRE RATE</td><td>0.15</td></tr>
+                    <tr><td>FIRE COUNT</td><td>1</td></tr>
+                    <tr><td>MOVE SPEED</td><td>30</td></tr>
+                    <tr><td>ROTATION SPEED</td><td>135</td></tr>
+                    <tr><td>BODY DAMAGE</td><td>25</td></tr>
+                    <tr><td>BODY KNOCKBACK</td><td>12</td></tr>
+                </table>
+
+                <!-- Defender -->
+                <div class="unit-header">
+                    <img src="assets/Defender.png" alt="Defender" class="unit-icon">
+                    <h3 class="unit-name">DEFENDER</h3>
+                </div>
+                <table class="unit-table">
+                    <tr><th>STAT</th><th>VALUE</th></tr>
+                    <tr><td>HEALTH</td><td>175</td></tr>
+                    <tr><td>REGEN</td><td>40</td></tr>
+                    <tr><td>FIRE RATE</td><td>0.6</td></tr>
+                    <tr><td>FIRE COUNT</td><td>6</td></tr>
+                    <tr><td>MOVE SPEED</td><td>35</td></tr>
+                    <tr><td>ROTATION SPEED</td><td>180</td></tr>
+                    <tr><td>BODY DAMAGE</td><td>30</td></tr>
+                    <tr><td>BODY KNOCKBACK</td><td>10</td></tr>
+                </table>
+
+                <!-- Firewall -->
+                <div class="unit-header">
+                    <img src="assets/Firewall.png" alt="Firewall" class="unit-icon">
+                    <h3 class="unit-name">FIREWALL</h3>
+                </div>
+                <table class="unit-table">
+                    <tr><th>STAT</th><th>VALUE</th></tr>
+                    <tr><td>HEALTH</td><td>75</td></tr>
+                    <tr><td>REGEN</td><td>25</td></tr>
+                    <tr><td>FIRE RATE</td><td>4</td></tr>
+                    <tr><td>FIRE COUNT</td><td>2 (2 Salvos)</td></tr>
+                    <tr><td>MOVE SPEED</td><td>35</td></tr>
+                    <tr><td>ROTATION SPEED</td><td>45</td></tr>
+                    <tr><td>BODY DAMAGE</td><td>20</td></tr>
+                    <tr><td>BODY KNOCKBACK</td><td>10</td></tr>
+                </table>
+
+                <!-- Disinfector -->
+                <div class="unit-header">
+                    <img src="assets/Disinfector.png" alt="Disinfector" class="unit-icon">
+                    <h3 class="unit-name">DISINFECTOR</h3>
+                </div>
+                <table class="unit-table">
+                    <tr><th>STAT</th><th>VALUE</th></tr>
+                    <tr><td>HEALTH</td><td>60</td></tr>
+                    <tr><td>REGEN</td><td>15</td></tr>
+                    <tr><td>FIRE RATE</td><td>5</td></tr>
+                    <tr><td>FIRE COUNT</td><td>1</td></tr>
+                    <tr><td>MOVE SPEED</td><td>30</td></tr>
+                    <tr><td>ROTATION SPEED</td><td>90</td></tr>
+                    <tr><td>BODY DAMAGE</td><td>25</td></tr>
+                    <tr><td>BODY KNOCKBACK</td><td>10</td></tr>
+                </table>
+
+                <!-- Restore -->
+                <div class="unit-header">
+                    <img src="assets/Restore.png" alt="Restore" class="unit-icon">
+                    <h3 class="unit-name">RESTORE (HEALER)</h3>
+                </div>
+                <table class="unit-table">
+                    <tr><th>STAT</th><th>VALUE</th></tr>
+                    <tr><td>HEALTH</td><td>45</td></tr>
+                    <tr><td>REGEN</td><td>45</td></tr>
+                    <tr><td>FIRE RATE</td><td>3</td></tr>
+                    <tr><td>FIRE COUNT</td><td>1 (2 Salvos)</td></tr>
+                    <tr><td>MOVE SPEED</td><td>60</td></tr>
+                    <tr><td>ROTATION SPEED</td><td>180</td></tr>
+                    <tr><td>BODY DAMAGE</td><td>15</td></tr>
+                    <tr><td>BODY KNOCKBACK</td><td>6</td></tr>
+                </table>
+
+                <!-- Debug -->
+                <div class="unit-header">
+                    <img src="assets/Debug.png" alt="Debug" class="unit-icon">
+                    <h3 class="unit-name">DEBUG</h3>
+                </div>
+                <table class="unit-table">
+                    <tr><th>STAT</th><th>VALUE</th></tr>
+                    <tr><td>HEALTH</td><td>90</td></tr>
+                    <tr><td>REGEN</td><td>30</td></tr>
+                    <tr><td>FIRE RATE</td><td>6</td></tr>
+                    <tr><td>FIRE COUNT</td><td>1</td></tr>
+                    <tr><td>MOVE SPEED</td><td>25</td></tr>
+                    <tr><td>ROTATION SPEED</td><td>90</td></tr>
+                    <tr><td>BODY DAMAGE</td><td>20</td></tr>
+                    <tr><td>BODY KNOCKBACK</td><td>10</td></tr>
+                </table>
+
+                <!-- Database -->
+                <div class="unit-header">
+                    <img src="assets/Database.png" alt="Database" class="unit-icon">
+                    <h3 class="unit-name">DATABASE</h3>
+                </div>
+                <table class="unit-table">
+                    <tr><th>STAT</th><th>VALUE</th></tr>
+                    <tr><td>HEALTH</td><td>1200</td></tr>
+                    <tr><td>REGEN</td><td>100</td></tr>
+                    <tr><td>FIRE RATE</td><td>8</td></tr>
+                    <tr><td>FIRE COUNT</td><td>4</td></tr>
+                    <tr><td>MOVE SPEED</td><td>4.5</td></tr>
+                    <tr><td>ROTATION SPEED</td><td>45</td></tr>
+                    <tr><td>BODY DAMAGE</td><td>30</td></tr>
+                    <tr><td>BODY KNOCKBACK</td><td>15</td></tr>
+                </table>
+
+                <!-- Syntax -->
+                <div class="unit-header">
+                    <img src="assets/Syntax.png" alt="Syntax" class="unit-icon">
+                    <h3 class="unit-name">SYNTAX (RAMMER)</h3>
+                </div>
+                <table class="unit-table">
+                    <tr><th>STAT</th><th>VALUE</th></tr>
+                    <tr><td>HEALTH</td><td>300</td></tr>
+                    <tr><td>REGEN</td><td>100</td></tr>
+                    <tr><td>MOVE SPEED</td><td>50</td></tr>
+                    <tr><td>ROTATION SPEED</td><td>360</td></tr>
+                    <tr><td>BODY DAMAGE</td><td>50</td></tr>
+                    <tr><td>BODY KNOCKBACK</td><td>16</td></tr>
+                </table>
+
+                <h2 class="section-title">ENEMIES</h2>
+
+                <!-- Bug -->
+                <div class="unit-header">
+                    <img src="assets/Bug.png" alt="Bug" class="unit-icon">
+                    <h3 class="unit-name">BUG</h3>
+                </div>
+                <table class="unit-table">
+                    <tr><th>STAT</th><th>VALUE</th></tr>
+                    <tr><td>HEALTH</td><td>100</td></tr>
+                    <tr><td>REGEN</td><td>20</td></tr>
+                    <tr><td>FIRE RATE</td><td>0.15</td></tr>
+                    <tr><td>FIRE COUNT</td><td>1</td></tr>
+                    <tr><td>MOVE SPEED</td><td>40</td></tr>
+                    <tr><td>ROTATION SPEED</td><td>135</td></tr>
+                    <tr><td>BODY DAMAGE</td><td>25</td></tr>
+                    <tr><td>BODY KNOCKBACK</td><td>12</td></tr>
+                </table>
+
+                <!-- Exception -->
+                <div class="unit-header">
+                    <img src="assets/Exception.png" alt="Exception" class="unit-icon">
+                    <h3 class="unit-name">EXCEPTION</h3>
+                </div>
+                <table class="unit-table">
+                    <tr><th>STAT</th><th>VALUE</th></tr>
+                    <tr><td>HEALTH</td><td>175</td></tr>
+                    <tr><td>REGEN</td><td>40</td></tr>
+                    <tr><td>FIRE RATE</td><td>2</td></tr>
+                    <tr><td>FIRE COUNT</td><td>15</td></tr>
+                    <tr><td>MOVE SPEED</td><td>45</td></tr>
+                    <tr><td>ROTATION SPEED</td><td>135</td></tr>
+                    <tr><td>BODY DAMAGE</td><td>30</td></tr>
+                    <tr><td>BODY KNOCKBACK</td><td>15</td></tr>
+                </table>
+
+                <!-- Error -->
+                <div class="unit-header">
+                    <img src="assets/Error.png" alt="Error" class="unit-icon">
+                    <h3 class="unit-name">ERROR</h3>
+                </div>
+                <table class="unit-table">
+                    <tr><th>STAT</th><th>VALUE</th></tr>
+                    <tr><td>HEALTH</td><td>100</td></tr>
+                    <tr><td>REGEN</td><td>15</td></tr>
+                    <tr><td>FIRE RATE</td><td>1.5</td></tr>
+                    <tr><td>FIRE COUNT</td><td>3</td></tr>
+                    <tr><td>MOVE SPEED</td><td>40</td></tr>
+                    <tr><td>ROTATION SPEED</td><td>135</td></tr>
+                    <tr><td>BODY DAMAGE</td><td>25</td></tr>
+                    <tr><td>BODY KNOCKBACK</td><td>10</td></tr>
+                </table>
+
+                <!-- Virus -->
+                <div class="unit-header">
+                    <img src="assets/Virus.png" alt="Virus" class="unit-icon">
+                    <h3 class="unit-name">VIRUS</h3>
+                </div>
+                <table class="unit-table">
+                    <tr><th>STAT</th><th>VALUE</th></tr>
+                    <tr><td>HEALTH</td><td>70</td></tr>
+                    <tr><td>REGEN</td><td>25</td></tr>
+                    <tr><td>FIRE RATE</td><td>6</td></tr>
+                    <tr><td>FIRE COUNT</td><td>5</td></tr>
+                    <tr><td>MOVE SPEED</td><td>45</td></tr>
+                    <tr><td>ROTATION SPEED</td><td>60</td></tr>
+                    <tr><td>BODY DAMAGE</td><td>20</td></tr>
+                    <tr><td>BODY KNOCKBACK</td><td>10</td></tr>
+                </table>
+
+                <!-- Exceed -->
+                <div class="unit-header">
+                    <img src="assets/Exceed.png" alt="Exceed" class="unit-icon">
+                    <h3 class="unit-name">EXCEED</h3>
+                </div>
+                <table class="unit-table">
+                    <tr><th>STAT</th><th>VALUE</th></tr>
+                    <tr><td>HEALTH</td><td>1200</td></tr>
+                    <tr><td>REGEN</td><td>100</td></tr>
+                    <tr><td>FIRE RATE</td><td>7</td></tr>
+                    <tr><td>FIRE COUNT</td><td>2</td></tr>
+                    <tr><td>MOVE SPEED</td><td>5</td></tr>
+                    <tr><td>ROTATION SPEED</td><td>45</td></tr>
+                    <tr><td>BODY DAMAGE</td><td>30</td></tr>
+                    <tr><td>BODY KNOCKBACK</td><td>15</td></tr>
+                </table>
+
+                <!-- Crash -->
+                <div class="unit-header">
+                    <img src="assets/Crash.png" alt="Crash" class="unit-icon">
+                    <h3 class="unit-name">CRASH (RAMMER)</h3>
+                </div>
+                <table class="unit-table">
+                    <tr><th>STAT</th><th>VALUE</th></tr>
+                    <tr><td>HEALTH</td><td>400</td></tr>
+                    <tr><td>REGEN</td><td>125</td></tr>
+                    <tr><td>MOVE SPEED</td><td>45</td></tr>
+                    <tr><td>ROTATION SPEED</td><td>360</td></tr>
+                    <tr><td>BODY DAMAGE</td><td>40</td></tr>
+                    <tr><td>BODY KNOCKBACK</td><td>16</td></tr>
+                </table>
+
+                <!-- Corrupt -->
+                <div class="unit-header">
+                    <img src="assets/Corrupt.png" alt="Corrupt" class="unit-icon">
+                    <h3 class="unit-name">CORRUPT</h3>
+                </div>
+                <table class="unit-table">
+                    <tr><th>STAT</th><th>VALUE</th></tr>
+                    <tr><td>HEALTH</td><td>70</td></tr>
+                    <tr><td>REGEN</td><td>20</td></tr>
+                    <tr><td>FIRE RATE</td><td>0.15</td></tr>
+                    <tr><td>FIRE COUNT</td><td>1</td></tr>
+                    <tr><td>MOVE SPEED</td><td>45</td></tr>
+                    <tr><td>ROTATION SPEED</td><td>180</td></tr>
+                    <tr><td>BODY DAMAGE</td><td>25</td></tr>
+                    <tr><td>BODY KNOCKBACK</td><td>12</td></tr>
+                </table>
+
+                <!-- Trojan -->
+                <div class="unit-header">
+                    <img src="assets/Trojan.png" alt="Trojan" class="unit-icon">
+                    <h3 class="unit-name">TROJAN</h3>
+                </div>
+                <table class="unit-table">
+                    <tr><th>STAT</th><th>VALUE</th></tr>
+                    <tr><td>HEALTH</td><td>100</td></tr>
+                    <tr><td>REGEN</td><td>20</td></tr>
+                    <tr><td>FIRE RATE</td><td>0.15</td></tr>
+                    <tr><td>FIRE COUNT</td><td>1</td></tr>
+                    <tr><td>MOVE SPEED</td><td>35</td></tr>
+                    <tr><td>ROTATION SPEED</td><td>90</td></tr>
+                    <tr><td>BODY DAMAGE</td><td>25</td></tr>
+                    <tr><td>BODY KNOCKBACK</td><td>10</td></tr>
+                </table>
+
+                <!-- Space Invader (Boss) -->
+                <div class="unit-header">
+                    <img src="assets/SpaceInvader.png" alt="Space Invader" class="unit-icon">
+                    <h3 class="unit-name">SPACE INVADER (BOSS)</h3>
+                </div>
+                <table class="unit-table">
+                    <tr><th>STAT</th><th>VALUE</th></tr>
+                    <tr><td>HEALTH</td><td>6000</td></tr>
+                    <tr><td>REGEN</td><td>100</td></tr>
+                    <tr><td>FIRE RATE</td><td>10</td></tr>
+                    <tr><td>FIRE COUNT</td><td>5</td></tr>
+                    <tr><td>MOVE SPEED</td><td>150</td></tr>
+                    <tr><td>ROTATION SPEED</td><td>90</td></tr>
+                    <tr><td>BODY DAMAGE</td><td>100</td></tr>
+                    <tr><td>BODY KNOCKBACK</td><td>50</td></tr>
+                </table>
+            </div>
+        </div>
+
+        <!-- Extra laser layer -->
+        <div class="extra-laser"></div>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        // Center Fade-in
+        window.addEventListener('load', () => {
+            document.body.classList.add('visible');
+        });
+
+        // Navbar scroll animation
+        let lastScrollTop = 0;
+        const navbar = document.getElementById('navbar');
+
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (currentScroll > lastScrollTop && currentScroll > 120) {
+                navbar.classList.add('hidden');
+            } else {
+                navbar.classList.remove('hidden');
+            }
+            lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+        });
+    </script>
+
+</body>
+</html>
